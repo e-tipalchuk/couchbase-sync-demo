@@ -1,0 +1,5 @@
+#ifndef CouchbaseSyncDemo_CouchbaseSyncDemo_Bridging_Header_h
+#define CouchbaseSyncDemo_CouchbaseSyncDemo_Bridging_Header_h
+#import "CouchbaseLite/CouchbaseLite.h"
+
+#endif

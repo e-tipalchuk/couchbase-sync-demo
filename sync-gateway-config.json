@@ -1,0 +1,15 @@
+{
+   "interface":":4984",
+   "adminInterface":"0.0.0.0:4985",
+   "log": ["CRUD+", "REST+", "Changes+", "Attach+"],
+   "databases":{
+      "demo":{
+         "bucket":"demo",
+         "server":"http://localhost:8091",
+         "users": {
+             "GUEST": {"disabled": false, "admin_channels": ["*"]} 
+         },
+         "sync":`function(doc) {channel(doc.channels);}`
+      }
+   }
+}

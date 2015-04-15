@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CD3282DDA5606A4EBF43AFA /* libPods-CouchbaseSyncDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D5259906D0AE3A6077C95E /* libPods-CouchbaseSyncDemo.a */; };
+		E96EF7581ADEDFDE009AD23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EF7571ADEDFDE009AD23E /* AppDelegate.swift */; };
+		E96EF75A1ADEDFDE009AD23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EF7591ADEDFDE009AD23E /* ViewController.swift */; };
+		E96EF75D1ADEDFDE009AD23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96EF75B1ADEDFDE009AD23E /* Main.storyboard */; };
+		E96EF75F1ADEDFDE009AD23E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96EF75E1ADEDFDE009AD23E /* Images.xcassets */; };
+		E96EF7621ADEDFDE009AD23E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96EF7601ADEDFDE009AD23E /* LaunchScreen.xib */; };
+		E96EF76E1ADEDFDF009AD23E /* CouchbaseSyncDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EF76D1ADEDFDF009AD23E /* CouchbaseSyncDemoTests.swift */; };
+		E96EF7791ADEE127009AD23E /* CouchbaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EF7781ADEE127009AD23E /* CouchbaseService.swift */; };
+		E96EF77B1ADEE15D009AD23E /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EF77A1ADEE15D009AD23E /* ImageModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E96EF7681ADEDFDF009AD23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96EF74A1ADEDFDE009AD23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96EF7511ADEDFDE009AD23E;
+			remoteInfo = CouchbaseSyncDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7D5259906D0AE3A6077C95E /* libPods-CouchbaseSyncDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CouchbaseSyncDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B574495A504EEE941A315930 /* Pods-CouchbaseSyncDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseSyncDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseSyncDemo/Pods-CouchbaseSyncDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C2CED6D8A38462C7E300A8E6 /* Pods-CouchbaseSyncDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouchbaseSyncDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CouchbaseSyncDemo/Pods-CouchbaseSyncDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E96EF7521ADEDFDE009AD23E /* CouchbaseSyncDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouchbaseSyncDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96EF7561ADEDFDE009AD23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96EF7571ADEDFDE009AD23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E96EF7591ADEDFDE009AD23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E96EF75C1ADEDFDE009AD23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E96EF75E1ADEDFDE009AD23E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E96EF7611ADEDFDE009AD23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E96EF7671ADEDFDF009AD23E /* CouchbaseSyncDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CouchbaseSyncDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96EF76C1ADEDFDF009AD23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96EF76D1ADEDFDF009AD23E /* CouchbaseSyncDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchbaseSyncDemoTests.swift; sourceTree = "<group>"; };
+		E96EF7771ADEE0A6009AD23E /* CouchbaseSyncDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CouchbaseSyncDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E96EF7781ADEE127009AD23E /* CouchbaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouchbaseService.swift; sourceTree = "<group>"; };
+		E96EF77A1ADEE15D009AD23E /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E96EF74F1ADEDFDE009AD23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD3282DDA5606A4EBF43AFA /* libPods-CouchbaseSyncDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96EF7641ADEDFDF009AD23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		206D7EA30FBBB1599FFAAB39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B574495A504EEE941A315930 /* Pods-CouchbaseSyncDemo.debug.xcconfig */,
+				C2CED6D8A38462C7E300A8E6 /* Pods-CouchbaseSyncDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40C696CDCA0615F9D5FC7A89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7D5259906D0AE3A6077C95E /* libPods-CouchbaseSyncDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E96EF7491ADEDFDE009AD23E = {
+			isa = PBXGroup;
+			children = (
+				E96EF7771ADEE0A6009AD23E /* CouchbaseSyncDemo-Bridging-Header.h */,
+				E96EF7541ADEDFDE009AD23E /* CouchbaseSyncDemo */,
+				E96EF76A1ADEDFDF009AD23E /* CouchbaseSyncDemoTests */,
+				E96EF7531ADEDFDE009AD23E /* Products */,
+				206D7EA30FBBB1599FFAAB39 /* Pods */,
+				40C696CDCA0615F9D5FC7A89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E96EF7531ADEDFDE009AD23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E96EF7521ADEDFDE009AD23E /* CouchbaseSyncDemo.app */,
+				E96EF7671ADEDFDF009AD23E /* CouchbaseSyncDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E96EF7541ADEDFDE009AD23E /* CouchbaseSyncDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E96EF7571ADEDFDE009AD23E /* AppDelegate.swift */,
+				E96EF7591ADEDFDE009AD23E /* ViewController.swift */,
+				E96EF75B1ADEDFDE009AD23E /* Main.storyboard */,
+				E96EF75E1ADEDFDE009AD23E /* Images.xcassets */,
+				E96EF7601ADEDFDE009AD23E /* LaunchScreen.xib */,
+				E96EF7551ADEDFDE009AD23E /* Supporting Files */,
+				E96EF7781ADEE127009AD23E /* CouchbaseService.swift */,
+				E96EF77A1ADEE15D009AD23E /* ImageModel.swift */,
+			);
+			path = CouchbaseSyncDemo;
+			sourceTree = "<group>";
+		};
+		E96EF7551ADEDFDE009AD23E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E96EF7561ADEDFDE009AD23E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E96EF76A1ADEDFDF009AD23E /* CouchbaseSyncDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E96EF76D1ADEDFDF009AD23E /* CouchbaseSyncDemoTests.swift */,
+				E96EF76B1ADEDFDF009AD23E /* Supporting Files */,
+			);
+			path = CouchbaseSyncDemoTests;
+			sourceTree = "<group>";
+		};
+		E96EF76B1ADEDFDF009AD23E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E96EF76C1ADEDFDF009AD23E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E96EF7511ADEDFDE009AD23E /* CouchbaseSyncDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96EF7711ADEDFDF009AD23E /* Build configuration list for PBXNativeTarget "CouchbaseSyncDemo" */;
+			buildPhases = (
+				91E66C6AF35C98822AADF655 /* Check Pods Manifest.lock */,
+				E96EF74E1ADEDFDE009AD23E /* Sources */,
+				E96EF74F1ADEDFDE009AD23E /* Frameworks */,
+				E96EF7501ADEDFDE009AD23E /* Resources */,
+				F9A9C3AE4B35D9A796D6AB4B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CouchbaseSyncDemo;
+			productName = CouchbaseSyncDemo;
+			productReference = E96EF7521ADEDFDE009AD23E /* CouchbaseSyncDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E96EF7661ADEDFDF009AD23E /* CouchbaseSyncDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96EF7741ADEDFDF009AD23E /* Build configuration list for PBXNativeTarget "CouchbaseSyncDemoTests" */;
+			buildPhases = (
+				E96EF7631ADEDFDF009AD23E /* Sources */,
+				E96EF7641ADEDFDF009AD23E /* Frameworks */,
+				E96EF7651ADEDFDF009AD23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96EF7691ADEDFDF009AD23E /* PBXTargetDependency */,
+			);
+			name = CouchbaseSyncDemoTests;
+			productName = CouchbaseSyncDemoTests;
+			productReference = E96EF7671ADEDFDF009AD23E /* CouchbaseSyncDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E96EF74A1ADEDFDE009AD23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Центр ИТ";
+				TargetAttributes = {
+					E96EF7511ADEDFDE009AD23E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					E96EF7661ADEDFDF009AD23E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = E96EF7511ADEDFDE009AD23E;
+					};
+				};
+			};
+			buildConfigurationList = E96EF74D1ADEDFDE009AD23E /* Build configuration list for PBXProject "CouchbaseSyncDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E96EF7491ADEDFDE009AD23E;
+			productRefGroup = E96EF7531ADEDFDE009AD23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E96EF7511ADEDFDE009AD23E /* CouchbaseSyncDemo */,
+				E96EF7661ADEDFDF009AD23E /* CouchbaseSyncDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E96EF7501ADEDFDE009AD23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96EF75D1ADEDFDE009AD23E /* Main.storyboard in Resources */,
+				E96EF7621ADEDFDE009AD23E /* LaunchScreen.xib in Resources */,
+				E96EF75F1ADEDFDE009AD23E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96EF7651ADEDFDF009AD23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91E66C6AF35C98822AADF655 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A9C3AE4B35D9A796D6AB4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouchbaseSyncDemo/Pods-CouchbaseSyncDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E96EF74E1ADEDFDE009AD23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96EF7791ADEE127009AD23E /* CouchbaseService.swift in Sources */,
+				E96EF75A1ADEDFDE009AD23E /* ViewController.swift in Sources */,
+				E96EF7581ADEDFDE009AD23E /* AppDelegate.swift in Sources */,
+				E96EF77B1ADEE15D009AD23E /* ImageModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96EF7631ADEDFDF009AD23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96EF76E1ADEDFDF009AD23E /* CouchbaseSyncDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E96EF7691ADEDFDF009AD23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96EF7511ADEDFDE009AD23E /* CouchbaseSyncDemo */;
+			targetProxy = E96EF7681ADEDFDF009AD23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E96EF75B1ADEDFDE009AD23E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96EF75C1ADEDFDE009AD23E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E96EF7601ADEDFDE009AD23E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96EF7611ADEDFDE009AD23E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E96EF76F1ADEDFDF009AD23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E96EF7701ADEDFDF009AD23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E96EF7721ADEDFDF009AD23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B574495A504EEE941A315930 /* Pods-CouchbaseSyncDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CouchbaseSyncDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CouchbaseSyncDemo-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		E96EF7731ADEDFDF009AD23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CED6D8A38462C7E300A8E6 /* Pods-CouchbaseSyncDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CouchbaseSyncDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CouchbaseSyncDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E96EF7751ADEDFDF009AD23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CouchbaseSyncDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CouchbaseSyncDemo.app/CouchbaseSyncDemo";
+			};
+			name = Debug;
+		};
+		E96EF7761ADEDFDF009AD23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CouchbaseSyncDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CouchbaseSyncDemo.app/CouchbaseSyncDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E96EF74D1ADEDFDE009AD23E /* Build configuration list for PBXProject "CouchbaseSyncDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96EF76F1ADEDFDF009AD23E /* Debug */,
+				E96EF7701ADEDFDF009AD23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96EF7711ADEDFDF009AD23E /* Build configuration list for PBXNativeTarget "CouchbaseSyncDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96EF7721ADEDFDF009AD23E /* Debug */,
+				E96EF7731ADEDFDF009AD23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96EF7741ADEDFDF009AD23E /* Build configuration list for PBXNativeTarget "CouchbaseSyncDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96EF7751ADEDFDF009AD23E /* Debug */,
+				E96EF7761ADEDFDF009AD23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E96EF74A1ADEDFDE009AD23E /* Project object */;
+}
