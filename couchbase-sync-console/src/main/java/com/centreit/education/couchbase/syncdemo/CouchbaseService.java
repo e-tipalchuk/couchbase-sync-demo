@@ -1,6 +1,3 @@
-/*
- * (c) Центр ИТ, 2015. Все права защищены.
- */
 package com.centreit.education.couchbase.syncdemo;
 
 import com.couchbase.lite.*;
